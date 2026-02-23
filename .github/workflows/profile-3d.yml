@@ -1,0 +1,42 @@
+name: GitHub profile 3D contrib
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # every day at 18:00 UTC
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: generate-github-profile-3d-contrib
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: true # ensures push works with GITHUB_TOKEN
+
+      - uses: yoshi389111/github-profile-3d-contrib@0.9.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git config --global pull.rebase true
+      
+          git stash || echo "Nothing to stash"
+          git clean -fd                 # 🔥 ensure no untracked file blocks pull
+          git pull --rebase origin main || echo "Rebase pull failed"
+          git stash pop || echo "Nothing to pop or conflict occurred"
+      
+          # ✅ Only commit & push if changes exist
+          if [[ -n "$(git status --porcelain)" ]]; then
+            git add .
+            git commit -m "generated"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
+      
+
