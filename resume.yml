@@ -1,6 +1,10 @@
 sha: ''
 name: Md Jishna Jidan Maruf
-bio: Mechanical Engineering graduate from Bangladesh Army University of Science and Technology (BAUST) with strong expertise in PyroSim, AutoCAD, SolidWorks, and MS Office. Passionate about Fire Dynamics, Material Science, Heat Transfer, and Fluid Machinery. A detail-oriented and motivated engineer eager to apply technical knowledge and simulation skills to solve real-world engineering challenges.
+bio: Mechanical Engineering graduate from Bangladesh Army University of Science and
+  Technology (BAUST) with strong expertise in PyroSim, AutoCAD, SolidWorks, and MS
+  Office. Passionate about Fire Dynamics, Material Science, Heat Transfer, and Fluid
+  Machinery. A detail-oriented and motivated engineer eager to apply technical knowledge
+  and simulation skills to solve real-world engineering challenges.
 avatar: https://avatars.githubusercontent.com/u/104984001
 address: Saidpur,Nilphamari,Rangpur,Bangladesh
 email: jidanmaruf49@gmail.com
@@ -72,7 +76,6 @@ skills:
   - title: Rac
     icon: null
     emphasize: false
-
 pro_experience:
   enabled: false
   experiences:
@@ -83,7 +86,6 @@ pro_experience:
     end_date: October 2025
     responsibilities:
     - Purchasing goods and quality management
-
 project:
   enabled: true
   projects:
