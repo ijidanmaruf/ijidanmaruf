@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 * * * *" # Every hour
+permissions:
+  contents: write
+  
 jobs:
   BuildLatexTemplate:
     runs-on: ubuntu-latest
