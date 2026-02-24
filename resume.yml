@@ -77,7 +77,7 @@ skills:
     icon: null
     emphasize: false
 pro_experience:
-  enabled: false
+  enabled: true
   experiences:
   - title: Pioneers Knitwears Bd LTD.
     position: Procurement Officeer
