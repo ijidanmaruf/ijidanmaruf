@@ -44,6 +44,10 @@ jobs:
       - name: Checkout Repository for Latest Changes
         id: code-checkout
         uses: actions/checkout@v4
+      - name: Pull Latest Generated Files
+        id: pull-latest
+        run: |
+          git pull origin main
       - name: Compile LaTeX Document
         id: compile-latex
         uses: dante-ev/latex-action@latest
@@ -54,9 +58,8 @@ jobs:
       - name: Post Compile Housekeeping
         id: housekeeping
         run: |
-          rm Maruf_resume.pdf && cd latex
-          cp Maruf_resume.pdf ../Maruf_resume.pdf
-          rm Maruf_resume.pdf && cd ..
+          cp latex/Maruf_resume.pdf Maruf_resume.pdf
+          rm latex/Maruf_resume.pdf
       - name: Pull latest changes
         id: git-pull
         run: |
