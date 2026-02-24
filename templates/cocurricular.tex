@@ -1,0 +1,16 @@
+\BLOCK{if cocurricular.enabled}
+\section{Co-curricular Activities}
+\resumeSubHeadingListStart
+\BLOCK{for activitie in cocurricular.activities}
+\resumeProjectHeading
+{\VAR{activitie.title}}{}
+\BLOCK{if activitie.description}
+\resumeItemListStart
+\BLOCK{for item in activitie.description}
+\resumeItem{\VAR{item}}
+\BLOCK{endfor}
+\resumeItemListEnd
+\BLOCK{endif}
+\BLOCK{endfor}
+\resumeSubHeadingListEnd
+\BLOCK{endif}

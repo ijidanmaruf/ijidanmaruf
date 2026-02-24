@@ -1,6 +1,7 @@
-sha: ''
+sha: ""
 name: Md Jishna Jidan Maruf
-bio: Mechanical Engineering graduate from Bangladesh Army University of Science and
+bio:
+  Mechanical Engineering graduate from Bangladesh Army University of Science and
   Technology (BAUST) with strong expertise in PyroSim, AutoCAD, SolidWorks, and MS
   Office. Passionate about Fire Dynamics, Material Science, Heat Transfer, and Fluid
   Machinery. A detail-oriented and motivated engineer eager to apply technical knowledge
@@ -9,119 +10,130 @@ avatar: https://avatars.githubusercontent.com/u/104984001
 address: Saidpur,Nilphamari,Rangpur,Bangladesh
 email: jidanmaruf49@gmail.com
 languages:
-- Bangla
-- English
+  - Bangla
+  - English
 interests:
-- Material Science
-- HVAC design
-- Fire Dynamics
-- Fluid Mechanics
-- Thermo Dynamics
+  - Material Science
+  - HVAC design
+  - Fire Dynamics
+  - Fluid Mechanics
+  - Thermo Dynamics
 links:
-- title: (880) 1710-432 125
-  tooltip: Phone
-  url: tel:+8801710432125
-  icon: jam--phone
-  icon_alt: faPhone
-  emphasize: false
-- title: MD Jishna Jidan Maruf
-  tooltip: LinkedIn
-  url: https://www.linkedin.com/in/jidanmaruf/
-  icon: jam--linkedin
-  icon_alt: faLinkedin
-  emphasize: false
-- title: ijidanmaruf
-  tooltip: GitHub
-  url: https://github.com/ijidanmaruf
-  icon: jam--github
-  icon_alt: faGithub
-  emphasize: true
-- title: jidanmaruf49@gmail.com
-  tooltip: Email
-  url: mailto:jidanmaruf49@gmail.com
-  icon: jam--envelope
-  icon_alt: faEnvelope
-  emphasize: true
+  - title: (880) 1710-432 125
+    tooltip: Phone
+    url: tel:+8801710432125
+    icon: jam--phone
+    icon_alt: faPhone
+    emphasize: false
+  - title: MD Jishna Jidan Maruf
+    tooltip: LinkedIn
+    url: https://www.linkedin.com/in/jidanmaruf/
+    icon: jam--linkedin
+    icon_alt: faLinkedin
+    emphasize: false
+  - title: ijidanmaruf
+    tooltip: GitHub
+    url: https://github.com/ijidanmaruf
+    icon: jam--github
+    icon_alt: faGithub
+    emphasize: true
+  - title: jidanmaruf49@gmail.com
+    tooltip: Email
+    url: mailto:jidanmaruf49@gmail.com
+    icon: jam--envelope
+    icon_alt: faEnvelope
+    emphasize: true
 skills:
-- title: Programming Languages
-  list:
-  - title: Python
-    confidence: 78
-    icon: devicon--python
-    emphasize: false
-  - title: C++
-    confidence: 80
-    icon: devicon--cplusplus
-    emphasize: false
-  - title: MATLAB
-    confidence: 80
-    icon: devicon--matlab
-    emphasize: false
-- title: Tools
-  list:
-  - title: PyroSim
-    icon: null
-    emphasize: false
-  - title: AutoCAD
-    icon: null
-    emphasize: false
-  - title: SolidWorks
-    icon: null
-    emphasize: false
-  - title: MATLAB
-    icon: null
-    emphasize: false
-- title: Hard skills
-  list:
-  - title: Rac
-    icon: null
-    emphasize: false
+  - title: Programming Languages
+    list:
+      - title: Python
+        confidence: 78
+        icon: devicon--python
+        emphasize: false
+      - title: C++
+        confidence: 80
+        icon: devicon--cplusplus
+        emphasize: false
+      - title: MATLAB
+        confidence: 80
+        icon: devicon--matlab
+        emphasize: false
+  - title: Tools
+    list:
+      - title: PyroSim
+        icon: null
+        emphasize: false
+      - title: AutoCAD
+        icon: null
+        emphasize: false
+      - title: SolidWorks
+        icon: null
+        emphasize: false
+      - title: MATLAB
+        icon: null
+        emphasize: false
+  - title: Hard skills
+    list:
+      - title: Rac
+        icon: null
+        emphasize: false
 pro_experience:
   enabled: true
   experiences:
-  - title: Pioneers Knitwears Bd LTD.
-    position: Procurement Officeer
-    location: Uttar Badda, Dhaka
-    start_date: September 2024
-    end_date: October 2025
-    responsibilities:
-    - Purchasing goods and quality management
+    - title: Pioneers Knitwears Bd LTD.
+      position: Procurement Officeer
+      location: Uttar Badda, Dhaka
+      start_date: September 2024
+      end_date: October 2025
+      responsibilities:
+        - Purchasing goods and quality management
 project:
   enabled: true
   projects:
-  - title: Orifice
-    reference: Own
-    url: null
-    technologies: null
-    description:
-    - Designed and fabricated an orifice plate for flow measurement.
-    - Calculated flow rate using Bernoulli’s equation.
-    - Measured pressure drop across the plate.
-    - Analyzed discharge coefficient and flow characteristics.
-  - title: Fire Safety
-    reference: Own
-    url: null
-    technologies: null
-    description:
-    - Analyzed fire growth and sprinkler activation behavior in a shopping mall scenario.
-    - Studied heat release rate, temperature distribution, and smoke movement.
-    - Evaluated effectiveness of sprinkler system in controlling fire spread.
-    - Assessed fire suppression performance based on safety standards.
+    - title: Orifice
+      reference: Own
+      url: null
+      technologies: null
+      description:
+        - Designed and fabricated an orifice plate for flow measurement.
+        - Calculated flow rate using Bernoulli’s equation.
+        - Measured pressure drop across the plate.
+        - Analyzed discharge coefficient and flow characteristics.
+    - title: Fire Safety
+      reference: Own
+      url: null
+      technologies: null
+      description:
+        - Analyzed fire growth and sprinkler activation behavior in a shopping mall scenario.
+        - Studied heat release rate, temperature distribution, and smoke movement.
+        - Evaluated effectiveness of sprinkler system in controlling fire spread.
+        - Assessed fire suppression performance based on safety standards.
 education:
   enabled: true
   institutes:
-  - title: Bangladesh Army University of Science and Technology
-    degree:
-    - Bachelor of Science in Mechanical Engineering (BSc in ME)
-    location: Saidpur, Bangladesh
-    start_date: 2019
-    end_date: 2024
-    description: null
-  - title: Saidpur Government Science College
-    degree:
-    - Secondary School Certificate (SSC)
-    - Higher Secondary School Certificate (HSC)
-    location: Nilphamary, Bangladesh
-    start_date: 2005
-    end_date: 2017
-    description: null
+    - title: Bangladesh Army University of Science and Technology
+      degree:
+        - Bachelor of Science in Mechanical Engineering (BSc in ME)
+      location: Saidpur, Bangladesh
+      start_date: 2019
+      end_date: 2024
+      description: null
+    - title: Saidpur Government Science College
+      degree:
+        - Secondary School Certificate (SSC)
+        - Higher Secondary School Certificate (HSC)
+      location: Nilphamary, Bangladesh
+      start_date: 2005
+      end_date: 2017
+      description: null
+cocurricular:
+  enabled: true
+  activities:
+    - title: Sports and Cultural Activities
+      description:
+        - Participated in university sports events and competitions.
+        - Engaged in cultural programs and technical workshops.
+    - title: Leadership and Volunteering
+      description:
+        - Volunteered in community service initiatives.
+        - Assisted in organizing technical seminars and workshops.
