@@ -5,12 +5,15 @@ on:
     - cron: "0 18 * * *" # every day at 18:00 UTC
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
     name: generate-github-profile-3d-contrib
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: true # ensures push works with GITHUB_TOKEN
 
@@ -21,20 +24,14 @@ jobs:
 
       - name: Commit & Push
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git config --global pull.rebase true
-      
-          git stash || echo "Nothing to stash"
-          git clean -fd                 # 🔥 ensure no untracked file blocks pull
-          git pull --rebase origin main || echo "Rebase pull failed"
-          git stash pop || echo "Nothing to pop or conflict occurred"
-      
-          # ✅ Only commit & push if changes exist
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Only commit and push when generated files changed.
           if [[ -n "$(git status --porcelain)" ]]; then
             git add .
             git commit -m "generated"
-            git push origin main
+            git push
           else
             echo "No changes to commit"
           fi
